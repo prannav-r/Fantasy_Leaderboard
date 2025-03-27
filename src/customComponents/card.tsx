@@ -25,12 +25,12 @@ export default function ScoreCard({
 }: ScoreCardProps) {
   return (
     <Card>
-      <CardHeader className="flex flex-row items-center gap-4">
+      <CardHeader className="flex flex-col items-center gap-4">
         <Avatar className="h-12 w-12">
           <AvatarImage src={avatar} alt={title} />
           <AvatarFallback>{title[0]}</AvatarFallback>
         </Avatar>
-        <div>
+        <div className="text-center">
           <CardTitle>{title}</CardTitle>
           <CardDescription>{description}</CardDescription>
         </div>
