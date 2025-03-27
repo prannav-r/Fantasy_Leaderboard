@@ -1,16 +1,37 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 import Card from "./customComponents/card";
+import prAvatar from "../images/Pr.png";
+import leoAvatar from "../images/leo.jpg";
+import navAvatar from "../images/nav.jpg";
+import niranjAvatar from "../images/niranj.jpg";
 
 function App() {
   return (
     <div className="flex [&>div]:flex-1 flex-nowrap max-lg:flex-col gap-5">
-      <Card title="Poggy" description="hello" />
-      <Card title="Das" />
-      <Card title="Holy" />
-      <Card title="Jetti" />
+      <Card
+        title="Poggy"
+        description="No of wins"
+        cardContent="3"
+        avatar={prAvatar}
+      />
+      <Card
+        title="Leoiee"
+        description="No of wins"
+        cardContent="1"
+        avatar={leoAvatar}
+      />
+      <Card
+        title="Nav"
+        description="No of wins"
+        cardContent="1"
+        avatar={navAvatar}
+      />
+      <Card
+        title="Niranj"
+        description="No of wins"
+        cardContent="1"
+        avatar={niranjAvatar}
+      />
     </div>
   );
 }
