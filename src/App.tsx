@@ -17,7 +17,7 @@ function App() {
       <Card
         title="Leoiee"
         description="No of wins"
-        cardContent="1"
+        cardContent="2"
         avatar={leoAvatar}
       />
       <Card
