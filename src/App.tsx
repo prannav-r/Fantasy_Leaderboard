@@ -8,13 +8,10 @@ import niranjAvatar from "../images/niranj.jpg";
 function App() {
   const players = [
     { name: "Poggy", wins: 3, avatar: prAvatar },
-    { name: "Leoiee", wins: 1, avatar: leoAvatar },
+    { name: "Leoiee", wins: 2, avatar: leoAvatar },
     { name: "Nav", wins: 1, avatar: navAvatar },
-    { name: "Niranj", wins: 1, avatar: niranjAvatar },
+    { name: "Niranj", wins: 4, avatar: niranjAvatar },
   ];
-
-  const totalMatches = players.reduce((sum, player) => sum + player.wins, 0);
-  const totalPossibleMatches = 74;
 
   return (
     <div className="container mx-auto p-4">
